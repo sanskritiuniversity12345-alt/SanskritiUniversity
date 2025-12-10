@@ -1,190 +1,260 @@
-// Updated programmes data: flattened from the detailed `coursesData` mapping
+// Refactored programmes data with added schools
 const programmes = [
-  {
-    title: 'SCHOOL OF ENGINEERING & IT',
-    imgAlt: 'Engineering & IT',
-    imgSrc: '/programImages/IT.jpeg',
-    courses: [
-      'B.Tech – CSE',
-      'Mechanical (ME) *',
-      'AI & ML *',
-      'Data Science & Business Analytics *',
-      'Cloud Computing & Cyber Security *',
-      'M.Tech – CSE',
-      'BCA',
-      'AI & ML *',
-      'Data Science *',
-      'Cyber Security *',
-      'Cloud Computing & Cyber Security *',
-      'MCA – CSE',
-      'AI & ML',
-      'Cloud Computing & Cyber Security *'
-    ]
-  },
+{
+  title: 'Engineering & IT',
+  imgAlt: 'Engineering & IT',
+  imgSrc: '/programImages/IT.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Tech – CSE',
+    'B.Tech – Mechanical Engineering',
+    'B.Tech – CSE with Artificial Intelligence & Machine Learning',
+    'BCA (Bachelor of Computer Applications)',
+    'BCA – Artificial Intelligence & Machine Learning',
+    'BCA – Data Science',
+    'BCA – Cyber Security',
 
-  {
-    title: 'SCHOOL OF MANAGEMENT & COMMERCE',
-    imgAlt: 'Management & Commerce',
-    imgSrc: '/programImages/management.jpeg',
-    courses: [
-      'B.Com (Hons.)',
-      'B.Com (FinTech with AI) *',
-      'MBA – Dual Specialization',
-      'Agri Business Mgmt (ABM) *',
-      'MBA in Business Analytics *',
-      'MBA in Interactive & Real-Time 3D – Unreal Engine Generalist *',
-      'B.Sc – Hotel Management'
-    ]
-  },
+    // Post Graduate Programmes
+    'M.Tech – CSE',
+    'MCA (Master of Computer Application)',
 
-  {
-    title: 'SCHOOL OF EDUCATION',
-    imgAlt: 'Education',
-    imgSrc: '/programImages/education.jpeg',
-    courses: [
-      'B.Ed (200 Seats)',
-      'BA B.Ed / B.Sc B.Ed (100 Seats)',
-      'B.El.Ed (50 Seats)',
-      'M.Ed (50 Seats)',
-      'B.Ed Spl. Edu.',
-      'Hearing Impairment (HI)',
-      'Learning Disability (LD) *',
-      'Visual Impairment (VI) *',
-      'Intellectual Disability (ID) *',
-      'D.Ed Spl. Edu.',
-      'Intellectual Disability (ID)',
-      'Visual Impairment (VI)'
-    ]
-  },
+    // Integrated Programmes
+    'Integrated BCA + MCA',
 
-  {
-    title: 'SCHOOL OF REHABILITATION',
-    imgAlt: 'Rehabilitation',
-    imgSrc: '/programImages/rehabilitation.jpeg',
-    courses: [
-      'B.Ed Spl. Edu.',
-      'Hearing Impairment (HI)',
-      'Learning Disability (LD) *',
-      'Visual Impairment (VI) *',
-      'Intellectual Disability (ID) *',
-      'D.Ed Spl. Edu.',
-      'Intellectual Disability (ID)',
-      'Visual Impairment (VI)'
-    ]
-  },
+    // Doctoral Programmes
+    'Ph.D – Computer Science & Engineering',
+    'Ph.D – Mechanical Engineering'
+  ]
+}
+,
+{
+  title: 'Management & Commerce',
+  imgAlt: 'Management & Commerce',
+  imgSrc: '/programImages/management.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'BBA',
+    'BBA – Logistics Management',
+    'B.Com',
+    'B.Com (Hons.)',
 
-  {
-    title: 'SCHOOL OF NATUROPATHY & YOGIC SCIENCES',
-    imgAlt: 'Naturopathy & Yogic Sciences',
-    imgSrc: '/programImages/yogic.jpeg',
-    courses: ['BNYS *']
-  },
+    // Post Graduate Programmes
+    'MBA – Dual Specialization (Human Resource, Finance, International Business, Marketing Management)',
+    'MBA – Agri-Business',
 
-  {
-    title: 'SCHOOL OF LAW & LEGAL STUDIES',
-    imgAlt: 'Law & Legal Studies',
-    imgSrc: '/programImages/law.jpeg',
-    courses: ['BA LLB (Hons.)', 'B.Com LLB (Hons.)']
-  },
+    // Integrated Programmes
+    'Integrated BBA + MBA',
 
-  {
-    title: 'SCHOOL OF FASHION DESIGNING',
-    imgAlt: 'Fashion Designing',
-    imgSrc: '/programImages/fashion.jpeg',
-    courses: ['BA – Fashion *', 'Diploma – Fashion *']
-  },
+    // Doctoral Programmes
+    'Ph.D – Management'
+  ]
+},
+{
+  title: 'Tourism and Hospitality',
+  imgAlt: 'Tourism and Hospitality',
+  imgSrc: '/programImages/tourism.jpg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Sc – Hotel Management'
+  ]
+},
+{
+  title: 'Education',
+  imgAlt: 'Education',
+  imgSrc: '/programImages/education.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Ed',
+    'BA B.Ed',
+    'B.Sc B.Ed (Integrated)',
+    'B.El.Ed',
 
-  {
-    title: 'SCHOOL OF NURSING',
-    imgAlt: 'Nursing',
-    imgSrc: '/programImages/nursing.jpeg',
-    courses: ['B.Sc – Nursing', 'ANM – Auxiliary & Midwifery *', 'GNM – General Nursing & Midwifery *']
-  },
+    // Post Graduate Programmes
+    'M.Ed',
 
-  {
-    title: 'SCHOOL OF PHARMACY',
-    imgAlt: 'Pharmacy',
-    imgSrc: '/programImages/pharmacy.jpg',
-    courses: ['B.Pharma', 'B.Pharma Lateral Entry', 'D.Pharma', 'M.Pharma – Pharmaceutics & Pharmaceutical Chemistry']
-  },
+    // Diploma Programmes
+    'Diploma in Elementary Education (D.El.Ed)',
 
-  {
-    title: 'SCHOOL OF BASICS & APPLIED SCIENCES',
-    imgAlt: 'Basics & Applied Sciences',
-    imgSrc: '/programImages/science.jpeg',
-    courses: ['B.Sc – Forensic *', 'BA – General *', 'M.Sc – Biotech *', 'B.Sc – Biotech *', 'BA – Psychology (Hons.) *', 'MA – Psychology *']
-  },
+    // Doctoral Programmes
+    'Ph.D – Education'
+  ]
+},
+{
+  title: 'Rehabilitation',
+  imgAlt: 'Rehabilitation',
+  imgSrc: '/programImages/rehabilitation.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Ed Special Education – Learning Disability (LD)',
+    'B.Ed Special Education – Hearing Impairment (HI)',
+    'B.Ed Special Education – Intellectual Disability (ID)',
+    'B.Ed Special Education – Visual Impairment (VI)',
 
-  {
-    title: 'SCHOOL OF AGRICULTURE',
-    imgAlt: 'Agriculture',
-    imgSrc: '/programImages/agriculture.jpg',
-    courses: ['B.Sc – Agriculture (Hons.) – ICAR ACCREDITED.', 'M.Sc – Agronomy / Horticulture']
-  },
+    // Post Graduate / Diploma Programmes
+    'D.Ed Special Education – Visual Impairment (VI)',
+    'D.Ed Special Education – Intellectual Disability (ID)',
+    'D.Ed Special Education with MD'
+  ]
+},
+{
+  title: 'Yoga & Naturopathy',
+  imgAlt: 'Yoga & Naturopathy',
+  imgSrc: '/programImages/yogic.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'BNYS'
 
-  {
-    title: 'SCHOOL OF AYURVEDA',
-    imgAlt: 'Ayurveda',
-    imgSrc: '/programImages/ayurveda.jpeg',
-    courses: ['BAMS', 'MS – Shalya Tantra / Prasuti Tantra Evam Stree Rog']
-  },
+    // Post Graduate Programmes
+    // None specified
+  ]
+},
+{
+  title: 'Law & Legal Studies',
+  imgAlt: 'Law & Legal Studies',
+  imgSrc: '/programImages/law.jpeg',
+  courses: [
+    // Integrated Programmes
+    'BA LLB'
+  ]
+},
+{
+  title: 'Pharmaceutical Sciences',
+  imgAlt: 'Pharmaceutical Sciences',
+  imgSrc: '/programImages/pharmacal.jpg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Pharma',
+    'B.Pharma – Lateral Entry',
 
-  {
-    title: 'SCHOOL OF MEDICAL & ALLIED SCIENCES',
-    imgAlt: 'Medical & Allied Sciences',
-    imgSrc: '/programImages/Medical.jpg',
-    courses: [
-      'B.Sc – Cardiovascular Technology (CVT) *',
-      'B.Sc – Radiology & Imaging Technology (RIT) *',
-      'B.AOTT – Baccalaureate in Anesthesia and Operation Technology *',
-      'BPT',
-      'BMLS',
-      'MPT – Orthopedics / Sports / Neurology / Paediatrics',
-      'NOTE: Above courses are not linked with U.P. State Medical Faculty, Lucknow, Uttar Pradesh'
-    ]
-  },
+    // Diploma Programmes
+    'D.Pharma',
 
-  {
-    title: 'SCHOOL OF DOCTORAL (Ph.D)',
-    imgAlt: 'Doctoral (Ph.D)',
-    imgSrc: '/programImages/phd.jpeg',
-    courses: [
-      'PH.D of Education',
-      'PH.D of Management and Commerce',
-      'PH.D of Medical and Allied Sciences',
-      'PH.D of Ayurveda',
-      'PH.D of Law & Legal Studies',
-      'PH.D of Engineering',
-      'PH.D of Pharmacy',
-      'PH.D of Agriculture',
-      'PH.D of Basic & Applied Science',
-      'PH.D of Library Science'
-    ]
-  },
+    // Doctoral Programmes
+    'Ph.D – Pharmaceutical Science'
+  ]
+},
+{
+  title: 'Nursing',
+  imgAlt: 'Nursing',
+  imgSrc: '/programImages/nursing.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Sc – Nursing',
 
-  {
-    title: 'SCHOOL OF UNIVERSITY POLYTECHNIC (DIPLOMA)',
-    imgAlt: 'University Polytechnic',
-    imgSrc: '/programImages/diploma.jpeg',
-    courses: [
-      'Computer Science & Engineering (CSE)',
-      'Mechanical Engineering – Production – Automobile',
-      'Computer Science & Engineering (CSE) – 2 Years',
-      'Mechanical Engineering – Production – Automobile – 2 Years',
-      'Guidance & Counselling',
-      'Civil Engineering (CE)',
-      'Electrical Engineering (EE)',
-      'Civil Engineering (CE) – 2 Years',
-      'Electrical Engineering (EE) – 2 Years'
-    ]
-  },
+    // Diploma Programmes
+    'Diploma in Auxiliary Nursing & Midwifery (ANM)',
+    'Diploma in General Nursing & Midwifery (GNM)'
+  ]
+},
+{
+  title: 'Pharmacy & Research Centre',
+  imgAlt: 'Pharmacy & Research Centre',
+  imgSrc: '/programImages/pharmacy.jpg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Pharma',
+    'B.Pharma – Lateral Entry',
 
-  {
-    title: 'SCHOOL OF CERTIFICATE COURSES',
-    imgAlt: 'Certificate Courses',
-    imgSrc: '/programImages/management.jpeg',
-    courses: ['Medical Astrology', 'Educational Technology']
-  }
+    // Post Graduate Programmes
+    'M.Pharma',
+
+    // Diploma Programmes
+    'D.Pharma'
+  ]
+},
+
+{
+  title: 'Basic & Applied Sciences',
+  imgAlt: 'Basic & Applied Sciences',
+  imgSrc: '/programImages/science.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Sc – Biotech',
+    'B.Sc – Forensic',
+    'BA – Psychology (Hons.)',
+    'BA – Psychology',
+
+    // Post Graduate Programmes
+    'M.Sc – Biotech',
+
+    // Doctoral Programmes
+    'Ph.D – Chemistry',
+    'Ph.D – Mathematics',
+    'Ph.D – Physics',
+    'Ph.D – Sanskrit'
+  ]
+},
+{
+  title: 'Agriculture',
+  imgAlt: 'Agriculture',
+  imgSrc: '/programImages/agriculture.jpg',
+  courses: [
+    // Under Graduate Programmes
+    'B.Sc – Agriculture (Hons.)',
+
+    // Post Graduate Programmes
+    'M.Sc – Agriculture',
+
+    // Doctoral Programmes
+    'Ph.D – Agriculture'
+  ]
+},
+{
+  title: 'Ayurvedic Medical College & Hospital',
+  imgAlt: 'Ayurveda',
+  imgSrc: '/programImages/ayurveda.jpeg',
+  courses: [
+    // Under Graduate Programmes
+    'BAMS',
+
+    // Post Graduate Programmes
+    'M.S. Ayurveda – Prasuti Stri Rog (Gynaecology)',
+    'M.S. Ayurveda – Shalya Tantra (Surgery)',
+
+    // Doctoral Programmes
+    'Ph.D – Ayurveda',
+
+    // Certificate Programmes
+    'Certificate Course in Panchkarma'
+  ]
+},
+{
+  title: 'Medical & Allied Sciences',
+  imgAlt: 'Medical & Allied Sciences',
+  imgSrc: '/programImages/Medical.jpg',
+  courses: [
+    // Under Graduate Programmes
+    'Bachelor of Medical Lab Science (B.M.L.S)',
+    'B.Sc – Cardiovascular Technology',
+    'B.Sc – Radiology & Imaging Technology',
+    'B.Voc – MLT',
+    'BPT',
+    'B.Sc – Operation Theatre Technology',
+
+    // Post Graduate Programmes
+    'MPT'
+  ]
+},
+
+ {
+  title: 'University Polytechnic',
+  imgAlt: 'University Polytechnic',
+  imgSrc: '/programImages/diploma.jpeg',
+  courses: [
+    // Diploma Programmes
+    'Diploma in Computer Science & Engineering',
+    'Diploma in Civil Engineering',
+    'Diploma in Electrical Engineering',
+    'Diploma in Mechanical (Automobile) Engineering',
+    'Diploma in Mechanical (Production) Engineering',
+    'Diploma after 10+2 – Civil Engineering',
+    'Diploma after 10+2 – Computer Science & Engineering',
+    'Diploma after 10+2 – Electrical Engineering',
+    'Diploma after 10+2 – Mechanical (Automobile) Engineering',
+    'Diploma after 10+2 – Mechanical (Production) Engineering'
+  ]
+}
+
 ];
 
 export default programmes;
