@@ -1,0 +1,121 @@
+/* Background container */
+.app-received-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #dbeafe, #ffffff, #dcfce7);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Glass effect card */
+.success-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(200, 200, 200, 0.4);
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  animation: slideUp 0.9s ease;
+}
+
+/* Icon */
+.icon-wrapper {
+  width: 90px;
+  height: 90px;
+  background: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 50px;
+}
+
+/* Heading */
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #065f46;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Application ID box */
+.id-box {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 25px;
+  transition: 0.3s ease;
+}
+
+.id-box p {
+  color: #1e3a8a;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.id-box h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #1d4ed8;
+  letter-spacing: 1px;
+}
+
+/* Error text */
+.error-text {
+  margin-top: 30px;
+  color: #dc2626;
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(30px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .success-card {
+    padding: 35px 25px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .id-box h3 {
+    font-size: 24px;
+  }
+}
