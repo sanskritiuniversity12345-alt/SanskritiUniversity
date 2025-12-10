@@ -701,7 +701,7 @@ const AppContent = () => {
             <img src="https://www.sanskriti.edu.in/images/logo.png" alt="Sanskriti University Logo" />
             <p>28 K. M. Stone, Mathura - Delhi Highway, Chhata, Mathura (U.P.), (INDIA)</p>
             <p>Contact No: <a href="tel:+91 73868 12345">+91 73868 12345</a></p>
-            <p>Email ID: <a href="mailto:admissions@sanskriti.co.in">admissions@sanskriti.co.in</a></p>
+            <p>Email ID: <a href="mailto:sanskritiuniversity12345@gmail.com">sanskritiuniversity12345@gmail.com</a></p>
         </Footer>
 <FloatingButtons>
             <FloatingButton href="https://wa.me/917386812345" target="_blank" bg="#25D366"> <FaWhatsapp /> </FloatingButton>
