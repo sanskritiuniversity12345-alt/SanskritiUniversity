@@ -79,7 +79,15 @@ def submit_application():
             
         except Exception as db_error:
             db.session.rollback()
-            logger.error(f"Database error details: {str(db_error)}")
+            error_str = str(db_error)
+            logger.error(f"Database error details: {error_str}")
+            
+            # Check if it's a unique constraint violation on email
+            if 'UNIQUE constraint failed' in error_str or 'duplicate key' in error_str.lower():
+                return jsonify({
+                    'error': 'An application with this email already exists. Please use a different email address.'
+                }), 409
+            
             return jsonify({
                 'error': 'Database error while saving application. Please try again.'
             }), 500

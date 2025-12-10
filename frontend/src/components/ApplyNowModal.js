@@ -151,7 +151,12 @@ const ApplyNowModal = ({ closeModal }) => {
       });
     } catch (error) {
       console.error('Error submitting application:', error);
-      setError(error.message || 'Failed to submit application. Please try again.');
+      // Handle specific error for duplicate email
+      if (error.message && error.message.includes('already exists')) {
+        setError('This email has already been used to submit an application. Please use a different email address.');
+      } else {
+        setError(error.message || 'Failed to submit application. Please try again.');
+      }
     } finally {
       setLoading(false);
     }
